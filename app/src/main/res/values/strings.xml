@@ -5,6 +5,8 @@
     <string name="next_button">Next</string>
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect!</string>
+
+    <!-- Questions list-->
     <string name="question_asia">Lake Baikal is the oldest and deepest freshwater Lake in the world!</string>
     <string name="question_americas">The Amazon River is the largest river in the Americas</string>
     <string name="question_africa">The River Nile finds its source in Eqypt</string>
