@@ -29,12 +29,14 @@ public class MainActivity extends ActionBarActivity {
 
     private TextView mQuestionTextView;
 
+    //updates the question text
     public void updateQuestion(){
         mQuestionTextView = (TextView)findViewById(R.id.mQuestionTextView);
         int question = mQuestionBank[mCurrentIndex].getmQuestion();
         mQuestionTextView.setText(question);
     }
 
+    //tests to see if question is true or not based on its boolean input above
     private void checkAnswer(boolean userPressedTrue){
         boolean answerIsTrue = mQuestionBank[mCurrentIndex].ismTrueQuestion();
 
@@ -56,7 +58,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
 
-
+        //creates action listener for trueButton
         trueButton = (Button)findViewById(R.id.true_button);
         trueButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +67,7 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
+        //creates action listener for falseButton
         falseButton = (Button)findViewById(R.id.false_button);
         falseButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +76,7 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
+        //creates an action listener for nextButton allowing it to change questions
         nextButton = (Button)findViewById(R.id.next_button);
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
